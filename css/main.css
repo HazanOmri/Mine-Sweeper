@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+table {
+    border: 3px, black, solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+}
+
+.empty {
+    background-color: rgba(78, 77, 77, 0.686);
+}
+
+.img1 {
+    width: 40px;
+}
+
+.img2 {
+    width: 40px;
+}
+
+.img3 {
+    width: 40px;
+}
+
+.img4 {
+    width: 40px;
+}
+
+.img5 {
+    width: 40px;
+}
+
+.img6 {
+    width: 40px;
+}
+
+.img7 {
+    width: 40px;
+}
+
+.img8 {
+    width: 40px;
+}
+
+.imgBomb {
+    width: 40px;
+}
+
+.flag {
+    width: 40px;
+}
