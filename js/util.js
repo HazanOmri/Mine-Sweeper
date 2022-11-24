@@ -20,3 +20,20 @@ function getCellCoord(strCellId) {
     coord.j = +parts[2]
     return coord
 }
+
+function getSelector(coord) {
+    return `#cell-${coord.i}-${coord.j}`
+}
+
+function countUnShownNegs(cell) {
+    var count = 0
+    for (var i = cell.i - 1; i <= cell.i + 1; i++) {
+        if (i < 0 || i >= gBoard.length) continue
+        for (var j = cell.j - 1; j <= cell.j + 1; j++) {
+            if (i === cell.i && j === cell.j) continue
+            if (j < 0 || j >= gBoard[i].length) continue
+            if (!gBoard[i][j].isShown) count++
+        }
+    }
+    return count
+}
