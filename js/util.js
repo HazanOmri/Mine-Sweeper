@@ -27,12 +27,13 @@ function getSelector(coord) {
 
 function countUnShownNegs(cell) {
     var count = 0
-    for (var i = cell.i - 1; i <= cell.i + 1; i++) {
-        if (i < 0 || i >= gBoard.length) continue
-        for (var j = cell.j - 1; j <= cell.j + 1; j++) {
-            if (i === cell.i && j === cell.j) continue
-            if (j < 0 || j >= gBoard[i].length) continue
-            if (!gBoard[i][j].isShown) count++
+    for (var idxI = cell.i - 1; idxI <= cell.i + 1; idxI++) {
+        if (idxI < 0 || idxI >= gBoard.length) continue
+        for (var idxJ = cell.j - 1; idxJ <= cell.j + 1; idxJ++) {
+            if (idxI === cell.i && idxJ === cell.j) continue
+            if (idxI < 0 ||  idxJ>= gBoard[idxI].length) continue
+            if (!gBoard[idxI][idxJ].isShown) count++
+            console.log('count:',count)
         }
     }
     return count

@@ -1,21 +1,53 @@
 body {
     text-align: center;
-    background-color: antiquewhite;
+    background-image: url(../img/background.png);
+    font-family: monospace;
 }
-
+.level{
+    border-radius: 15%;
+    background-color: rgb(147, 146, 146);
+    border: solid 3px rgb(100, 100, 100);
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+h2{
+    font-size: 26px;
+    cursor: pointer;
+}
+.timer{
+    border-radius: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    background-color: rgb(179, 179, 179);
+    border: solid 3px rgb(170, 169, 169);
+    font-family: monospace;
+    font-weight: bold;
+}
 table {
     border: 3px, black, solid;
     margin-left: auto;
     margin-right: auto;
+    background-color: whitesmoke;
 }
 
 td {
     background-color: gray;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    border: solid 2px rgb(61, 61, 61);
+    border-radius: 10%;
+    transition: 0.5s;
 }
 td:hover{
     background-color: rgba(128, 128, 128, 0.774);
+    cursor: pointer;
+}
+.hints{
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 
@@ -24,41 +56,47 @@ td:hover{
 }
 
 .img1 {
-    width: 40px;
+    width: 26px;
 }
 
 .img2 {
-    width: 40px;
+    width: 26px;
 }
 
 .img3 {
-    width: 40px;
+    width: 26px;
 }
 
 .img4 {
-    width: 40px;
+    width: 26px;
 }
 
 .img5 {
-    width: 40px;
+    width: 26px;
 }
 
 .img6 {
-    width: 40px;
+    width: 26px;
 }
 
 .img7 {
-    width: 40px;
+    width: 26px;
 }
 
 .img8 {
-    width: 40px;
+    width: 26px;
 }
 
 .imgBomb {
-    width: 40px;
+    width: 26px;
 }
 
 .flag {
-    width: 40px;
+    width: 26px;
+}
+footer{
+    background-color: rgb(147, 146, 146);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }

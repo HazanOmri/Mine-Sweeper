@@ -11,17 +11,19 @@
 
 <body onload="onInitGame(4,2)">
     <h1>Mine Sweeper <br>
-        <button class="16" onclick="onInitGame(4,2)">Easy - 16</button>
-        <button class="64" onclick="onInitGame(8,14)">Medium - 64</button>
-        <button class="144" onclick="onInitGame(12,32)">Hard - 144</button>
+        <button class="level" onclick="onInitGame(4,2)">Easy - 16</button>
+        <button class="level" onclick="onInitGame(8,14)">Medium - 64</button>
+        <button class="level" onclick="onInitGame(12,32)">Hard - 144</button>
     </h1>
-    <h2>😃</h2>
-    <p class="timer">00:00</p>
+    <h2 onclick="onInitGame(4,2)">😃</h2>
+    <div class="timer">00:00</div>
+    <p></p>
     <table></table>
-    <br><br>
-    <footer>Made by: Omri Hazan</footer>
-    <script src="js/util.js"></script>
-    <script src="js/main.js"></script>
+    <div class="hints" onclick="onHint()"></div>
+        <br>
+        <footer>Made by: Omri Hazan</footer>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
